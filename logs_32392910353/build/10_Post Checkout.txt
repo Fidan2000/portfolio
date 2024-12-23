@@ -1,0 +1,10 @@
+﻿2024-12-23T20:31:53.7002781Z Post job cleanup.
+2024-12-23T20:31:53.7949892Z [command]/usr/bin/git version
+2024-12-23T20:31:53.7987808Z git version 2.47.1
+2024-12-23T20:31:53.8030620Z Temporarily overriding HOME='/home/runner/work/_temp/aa82a94d-dd60-4d25-868d-360256c985d2' before making global git config changes
+2024-12-23T20:31:53.8031748Z Adding repository directory to the temporary git global config as a safe directory
+2024-12-23T20:31:53.8036317Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/portfolio/portfolio
+2024-12-23T20:31:53.8073646Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-12-23T20:31:53.8106893Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-12-23T20:31:53.8325809Z fatal: No url found for submodule path 'portfolio' in .gitmodules
+2024-12-23T20:31:53.8356781Z ##[warning]The process '/usr/bin/git' failed with exit code 128

@@ -1,0 +1,79 @@
+﻿2024-12-23T20:31:52.7857504Z ##[group]Run actions/checkout@v4
+2024-12-23T20:31:52.7858069Z with:
+2024-12-23T20:31:52.7858238Z   ref: main
+2024-12-23T20:31:52.7858405Z   submodules: recursive
+2024-12-23T20:31:52.7858618Z   repository: Fidan2000/portfolio
+2024-12-23T20:31:52.7858983Z   token: ***
+2024-12-23T20:31:52.7859161Z   ssh-strict: true
+2024-12-23T20:31:52.7859330Z   ssh-user: git
+2024-12-23T20:31:52.7859509Z   persist-credentials: true
+2024-12-23T20:31:52.7859713Z   clean: true
+2024-12-23T20:31:52.7859902Z   sparse-checkout-cone-mode: true
+2024-12-23T20:31:52.7860129Z   fetch-depth: 1
+2024-12-23T20:31:52.7860294Z   fetch-tags: false
+2024-12-23T20:31:52.7860469Z   show-progress: true
+2024-12-23T20:31:52.7860637Z   lfs: false
+2024-12-23T20:31:52.7860829Z   set-safe-directory: true
+2024-12-23T20:31:52.7861232Z ##[endgroup]
+2024-12-23T20:31:52.9848041Z Syncing repository: Fidan2000/portfolio
+2024-12-23T20:31:52.9849362Z ##[group]Getting Git version info
+2024-12-23T20:31:52.9849758Z Working directory is '/home/runner/work/portfolio/portfolio'
+2024-12-23T20:31:52.9850407Z [command]/usr/bin/git version
+2024-12-23T20:31:52.9904605Z git version 2.47.1
+2024-12-23T20:31:52.9932181Z ##[endgroup]
+2024-12-23T20:31:52.9946537Z Temporarily overriding HOME='/home/runner/work/_temp/701919ee-b1d7-4d16-8628-78ba12893298' before making global git config changes
+2024-12-23T20:31:52.9947442Z Adding repository directory to the temporary git global config as a safe directory
+2024-12-23T20:31:52.9960169Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/portfolio/portfolio
+2024-12-23T20:31:52.9997759Z Deleting the contents of '/home/runner/work/portfolio/portfolio'
+2024-12-23T20:31:53.0001724Z ##[group]Initializing the repository
+2024-12-23T20:31:53.0006152Z [command]/usr/bin/git init /home/runner/work/portfolio/portfolio
+2024-12-23T20:31:53.0095537Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-12-23T20:31:53.0096315Z hint: is subject to change. To configure the initial branch name to use in all
+2024-12-23T20:31:53.0096839Z hint: of your new repositories, which will suppress this warning, call:
+2024-12-23T20:31:53.0097170Z hint:
+2024-12-23T20:31:53.0097445Z hint: 	git config --global init.defaultBranch <name>
+2024-12-23T20:31:53.0097713Z hint:
+2024-12-23T20:31:53.0097974Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-12-23T20:31:53.0098415Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-12-23T20:31:53.0098758Z hint:
+2024-12-23T20:31:53.0098930Z hint: 	git branch -m <name>
+2024-12-23T20:31:53.0101502Z Initialized empty Git repository in /home/runner/work/portfolio/portfolio/.git/
+2024-12-23T20:31:53.0113250Z [command]/usr/bin/git remote add origin https://github.com/Fidan2000/portfolio
+2024-12-23T20:31:53.0149018Z ##[endgroup]
+2024-12-23T20:31:53.0149596Z ##[group]Disabling automatic garbage collection
+2024-12-23T20:31:53.0154162Z [command]/usr/bin/git config --local gc.auto 0
+2024-12-23T20:31:53.0184332Z ##[endgroup]
+2024-12-23T20:31:53.0184903Z ##[group]Setting up auth
+2024-12-23T20:31:53.0192128Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-12-23T20:31:53.0222284Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-12-23T20:31:53.0557369Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-12-23T20:31:53.0587195Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-12-23T20:31:53.0822185Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-12-23T20:31:53.0870210Z ##[endgroup]
+2024-12-23T20:31:53.0870878Z ##[group]Fetching the repository
+2024-12-23T20:31:53.0879950Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2024-12-23T20:31:53.5858337Z From https://github.com/Fidan2000/portfolio
+2024-12-23T20:31:53.5859181Z  * [new branch]      main       -> origin/main
+2024-12-23T20:31:53.5886271Z ##[endgroup]
+2024-12-23T20:31:53.5886859Z ##[group]Determining the checkout info
+2024-12-23T20:31:53.5894149Z [command]/usr/bin/git branch --list --remote origin/main
+2024-12-23T20:31:53.5918750Z   origin/main
+2024-12-23T20:31:53.5926044Z ##[endgroup]
+2024-12-23T20:31:53.5930482Z [command]/usr/bin/git sparse-checkout disable
+2024-12-23T20:31:53.5971213Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2024-12-23T20:31:53.6001928Z ##[group]Checking out the ref
+2024-12-23T20:31:53.6005289Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-12-23T20:31:53.6165597Z Switched to a new branch 'main'
+2024-12-23T20:31:53.6168562Z branch 'main' set up to track 'origin/main'.
+2024-12-23T20:31:53.6175625Z ##[endgroup]
+2024-12-23T20:31:53.6176248Z ##[group]Setting up auth for fetching submodules
+2024-12-23T20:31:53.6182143Z [command]/usr/bin/git config --global http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-12-23T20:31:53.6225876Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2024-12-23T20:31:53.6261668Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2024-12-23T20:31:53.6299744Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-49757868@github.com:
+2024-12-23T20:31:53.6330579Z ##[endgroup]
+2024-12-23T20:31:53.6331148Z ##[group]Fetching submodules
+2024-12-23T20:31:53.6337811Z [command]/usr/bin/git submodule sync --recursive
+2024-12-23T20:31:53.6581879Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2024-12-23T20:31:53.6827033Z ##[error]fatal: No url found for submodule path 'portfolio' in .gitmodules
+2024-12-23T20:31:53.6851399Z ##[error]The process '/usr/bin/git' failed with exit code 128
